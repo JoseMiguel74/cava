@@ -1,0 +1,108 @@
+/* Mini reset*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;   /* las medidas de las cajas toman como referencia el borde*/
+
+}
+
+html{
+    font-size: 0.625em; /* equivale a 10 pixels, afecta a todooooo */
+}
+
+body{
+    overflow-x: hidden; /*poner siempre en el body, lo que se escape del body horizontalmente lo esconde*/
+}
+
+
+ul,ol{
+    list-style-type: none;/*  none ninguna filigrana antes del texto */
+    display:flex;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: normal;
+}
+
+
+/*  Fin Mini reset */
+
+
+
+#contenedorGeneralPasafotos{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+
+#contenedorPasaFotos{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: relative;
+
+    border: 1px solid black;
+}
+
+
+
+#pasa1, #pasa2,#pasa3{
+    width: 30%;
+    border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+
+}
+
+#contenedorPasaFotos img {
+    width: 65%;
+    text-align: center;
+    border: 1px solid black;
+
+
+}
+
+.cuadradito{
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(45deg);
+    background-color: brown;
+    position: absolute;
+    left:47%;
+}
+
+#contenedorGeneralPasafotos h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    line-height: 1;
+}
+
+#contenedorGeneralPasafotos p{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 12px;
+line-height: 1.5;
+margin-top: 6%;
+padding: 0 10%;
+}
+
+#contenedorPasaFotos #pasa1 h3{
+    color:rgb(102, 49, 0);
+}
+
+#contenedorPasaFotos #pasa2 h3{
+    color:rgb(128, 58, 56);
+}
+
+#contenedorPasaFotos #pasa3 h3{
+    color:rgb(141, 116, 73);
+}
