@@ -34,14 +34,14 @@ h6 {
 /*  Fin Mini reset */
 
 body {
-  background-image: url(../img/indiana.png);
+  background-image: url(/img/indiana.png);
 }
 
 main {
   max-width: 1200px;
   margin: 0 auto;
   z-index: -1;
-  background-image: url(../img/textura.jpg);
+  background-image: url(/img/textura.jpg);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.445);
 }
 /* ***********************************
@@ -80,10 +80,10 @@ ENTRADA*/
 
 #menuPrincipal {
   max-width: 1200px;
-  /* position: sticky;
+  position: sticky;
   top: 0;
   z-index: 100;
-  background-image: url(../img/textura.jpg); */
+  background-image: url(/img/textura.jpg);
 }
 
 #menuPrincipal ul {
@@ -181,8 +181,6 @@ ENTRADA*/
   color: rgb(141, 116, 73);
 }
 
-
-
 /* ***************************
 SEPARADOR UNO */
 
@@ -222,13 +220,10 @@ PRIMERA SECCIÓN */
   justify-content: center;
   max-width: 1200px;
   margin: 5% 0 7%;
-  position: relative;
 }
 #contPrimeraSeccion > * {
   width: 33%;
   padding: 0 5%;
-
-
 }
 
 #contPrimeraSeccion article:nth-child(2) {
@@ -248,8 +243,6 @@ PRIMERA SECCIÓN */
   font-family: "Josefin Slab";
   line-height: 1.6;
 }
-
-
 
 /* ***************************
 SEPARADOR DOS */
@@ -341,10 +334,11 @@ SEPARADOR TRES */
   color: rgb(141, 116, 73);
   margin: 4% 0% 5%;
 }
+
 /* ***************************
 FOOTER */
-.fotoFooter {
-  display: block;
+.fotoFooter{
+  display:block
 }
 footer {
   background-color: rgb(190, 190, 190);
@@ -352,17 +346,29 @@ footer {
   text-align: center;
   font-family: "Josefin Slab", serif;
   font-size: 15px;
-  color: rgb(87, 87, 87);
+  color:rgb(87, 87, 87);
+
+
+
 }
 footer > * {
   width: 100%;
   margin-top: 1.5%;
+
+border: 1px solid black;
+
 }
 footer li {
-  display: inline-block;
-  padding: 0% 2%;
+  padding: 0 1.5%;
+  border:1px solid black;
+  text-align: center;
 }
 
+footer ul{
+  display: flex;
+  justify-content: center;
+
+}
 footer article:nth-of-type(3) {
   font-weight: 700;
 }
@@ -381,10 +387,10 @@ footer article:nth-of-type(5) {
   width: 15%;
   height: auto;
 }
-
-.redesSociales li {
-  padding: 0% 0.5%;
+.redesSociales img{
+  width: 100%;
 }
+
 .direccionFooter {
   color: rgb(156, 155, 155);
 }
@@ -393,4 +399,8 @@ footer h4 {
   font-size: 15px;
   letter-spacing: 3px;
   padding: 1% 0;
+}
+.redesSociales ul li:nth-of-type(1){
+padding-right: 1.5%;
+
 }
