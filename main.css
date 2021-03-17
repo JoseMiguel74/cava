@@ -1,0 +1,617 @@
+/* Mini reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* las medidas de las cajas toman como referencia el borde*/
+}
+
+html {
+  font-size: 0.625em; /* equivale a 10 pixels, afecta a todooooo */
+}
+
+body {
+  overflow-x: hidden; /*poner siempre en el body, lo que se escape del body horizontalmente lo esconde*/
+}
+
+ul,
+ol {
+  list-style-type: none; /*  none ninguna filigrana antes del texto */
+}
+
+a {
+  text-decoration: none;
+}
+iframe{
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/*  Fin Mini reset */
+
+body {
+  background-image: url(../img/indiana.png);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: -1;
+  background-image: url(../img/textura.jpg);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.445);
+}
+/* ***********************************
+ENTRADA*/
+
+#imagenEntrada {
+  position: relative;
+}
+
+#logo {
+  /* Placing the logo absolutely and with percentage values makes it responsive within the bounding box */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 15%;
+  height: auto;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+#navegacionEntrada ul {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  height: auto;
+  display: flex;
+}
+
+#navegacionEntrada li {
+  padding-right: 15px;
+}
+
+/* **********************************************************************
+  MENÚ
+ */
+
+#menuPrincipal {
+  max-width: 1200px;
+  /* position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: url(../img/textura.jpg); */
+}
+
+#menuPrincipal ul {
+  font-family: "Josefin Slab", serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 5%;
+  margin: 1.5% 0 2.5%;
+  text-align: center;
+  align-items: baseline;
+  font-weight: 700;
+}
+#menuPrincipal ul li:nth-of-type(4) {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  color: brown;
+}
+
+#titularMenu {
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 55px;
+  padding: 0px 5% 5%;
+  font-weight: 400;
+  color:rgb(54, 54, 54);
+
+}
+
+/* ********************************* */
+/* PASA FOTOS
+ */
+
+#contenedorPasafotos {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#pasa1,
+#pasa2,
+#pasa3 {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+#contenedorPasaFotos img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cuadradito {
+  width: 20px;
+  height: 20px;
+  transform: rotateZ(45deg);
+  background-color: rgb(71, 57, 30);
+  position: absolute;
+  left: 47%;
+  top: -10px;
+}
+
+#pasa2 .cuadradito {
+  background-color: rgb(128, 58, 56);
+}
+
+#pasa3 .cuadradito {
+  background-color: rgb(141, 116, 73);
+}
+
+#contenedorPasafotos h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+  line-height: 1;
+  position: relative;
+}
+
+#contenedorPasafotos p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 4%;
+  padding: 0 10%;
+}
+
+#contenedorPasafotos #pasa1 h3 {
+  color: rgb(71, 57, 30);
+}
+
+#contenedorPasafotos #pasa2 h3 {
+  color: rgb(128, 58, 56);
+}
+
+#contenedorPasafotos #pasa3 h3 {
+  color: rgb(141, 116, 73);
+}
+
+#contenedorPasafotos h3::after{
+  content:'';
+  position:absolute;
+  width: 60%;
+  left:50%;
+  bottom: -3px;
+  border-bottom: 1px solid rgb(98, 3, 41); 
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+.fichasBotellas{
+  color: rgb(71, 57, 30);
+}
+.fichasBotellasDos{
+  color: rgb(128, 58, 56);
+}
+.fichasBotellasTres{
+  color: rgb(141, 116, 73);
+}
+
+
+
+/* ***************************
+SEPARADOR UNO */
+
+#separadorUno {
+  max-width: 1200px;
+  margin: 4% 0 2%;
+}
+#separadorUno .tradicio {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  width: 12%;
+}
+
+.contenedorFoto {
+  position: relative;
+}
+
+.titularSeparadores {
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 50px;
+  color: rgb(96, 118, 65);
+  margin: 4% 0% 5%;
+}
+
+/* ***************************
+PRIMERA SECCIÓN */
+
+#contPrimeraSeccion {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 5% 0 7%;
+  padding: 15px 0px;
+  position: relative;
+}
+
+#contPrimeraSeccion > * {
+  width: 28%;
+}
+
+#contPrimeraSeccion article:nth-child(2) {
+  margin: 0 5px;
+  background-image: url(../img/Barriles.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+#contPrimeraSeccion h3 {
+  font-size: 40px;
+  font-family: "Great Vibes";
+  color: rgb(98, 3, 41);
+  margin-bottom: 3px;
+}
+
+#contPrimeraSeccion p {
+  font-size: 20px;
+  font-family: "Josefin Slab";
+  line-height: 1.4;
+}
+
+.verde {
+  color: rgb(100, 118, 69);
+}
+
+.ofertas::after {
+  content: "OFERTAS";
+  padding: 3px 8px;
+  background-color: rgb(100, 118, 69);
+  color: white;
+  margin: 0 0 0 35px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+#contPrimeraSeccion h3::after:nth-of-type(2) {
+  content: " ofertas";
+}
+
+#contPrimeraSeccion h3:nth-of-type(2)::after {
+  content: " ofertas";
+}
+
+#contPrimeraSeccion h3::after:nth-of-type(2) {
+  content: " ofertas";
+}
+
+.trianguloDer {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  text-align: right;
+
+}
+
+#contPrimeraSeccion article:nth-child(4),
+#contPrimeraSeccion article:nth-child(5) {
+  width: 35px;
+}
+
+.trianguloIzq {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: rotate(180deg) translate(0%, 50%);
+
+ 
+  text-align: right;
+}
+
+/* ***************************
+SEPARADOR DOS */
+
+#separadorDos {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 4% 0 2%;
+}
+
+#separadorDos .celler {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+
+  width: 12%;
+}
+
+.titularSeparadoresDos {
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 50px;
+  color: rgb(128, 58, 56);
+  margin: 4% 0% 5%;
+}
+
+/* ***************************
+RECETAS */
+
+#contRecetas {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 5% 0 7%;
+  padding: 15px 0px;
+  position: relative;
+}
+#contRecetas > * {
+  width: 40%;
+}
+
+#contRecetas h4 {
+  font-size: 18px;
+  font-family: "Josefin Slab", sans-serif;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#contRecetas h3 {
+  font-size: 40px;
+  font-family: "Great Vibes";
+  color: rgb(98, 3, 41);
+  position: relative;
+}
+
+
+#contRecetas h3::after{
+  content:'';
+  position:absolute;
+  width: 100%;
+  left:0;
+  bottom: 10px;                    /* <- distance */
+  border-bottom: 1px solid rgb(98, 3, 41); 
+}
+
+#contRecetas p {
+  font-size: 20px;
+  font-family: "Josefin Slab", sans-serif;
+  line-height: 1.4;
+}
+
+.trianguloRecetasDer,
+.trianguloRecetasIzq {
+  position: absolute;
+}
+
+.trianguloRecetasDer {
+  top: 50%;
+  right: -2px;
+  transform: translate(0%, -50%);
+}
+
+.trianguloRecetasIzq {
+  top: 50%;
+  left: -2px;
+  transform: rotate(180deg) translate(0%, 50%);
+}
+
+#contRecetas article:nth-of-type(3),
+#contRecetas article:nth-of-type(4) {
+  width: 35px;
+}
+#contRecetas article:nth-of-type(2){
+margin-left:35px;
+}
+
+/* ***************************
+SEPARADOR TRES */
+
+#separadorTres {
+  max-width: 1200px;
+  margin: 4% 0 2%;
+}
+
+#separadorTres .cavaTren {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+
+  width: 9%;
+}
+
+.titularSeparadoresTres {
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 50px;
+  color: rgb(141, 116, 73);
+  margin: 4% 0% 3%;
+}
+
+/* ***************************
+cavaTren */
+
+#cavaTren {
+  display: flex;
+  max-width: 1200px;
+  margin: 0% 0 7%;
+  padding: 15px 0px;
+  position: relative;
+}
+
+
+#cavaTren h4 {
+  font-size: 18px;
+  font-family: "Josefin Slab", sans-serif;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#cavaTren h3 {
+  font-size: 40px;
+  font-family: "Great Vibes";
+  color: rgb(98, 3, 41);
+  position: relative;
+}
+
+#cavaTren p {
+  font-size: 20px;
+  font-family: "Josefin Slab", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.pCavaTren {
+  color: rgb(141, 116, 73);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.triangulocavaTrenDer,
+.triangulocavaTrenIzq {
+  position: absolute;
+}
+
+.triangulocavaTrenDer {
+  top: 50%;
+  right: -3px;
+  transform: translate(0%, -50%);
+}
+
+.triangulocavaTrenIzq {
+  top: 50%;
+  left: -2px;
+  transform: rotate(180deg) translate(0%, 50%);
+}
+
+#cavaTren article:nth-of-type(3),
+#cavaTren article:nth-of-type(4) {
+  width: 35px;
+}
+#cavaTren article:nth-of-type(1) {
+  margin-left: 90px;
+  margin-right: 30px;
+  padding-left: 20px;
+}
+#cavaTren article:nth-of-type(2) {
+  margin-right:90px;
+}
+iframe{
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.575);
+}
+
+
+/* ***************************
+FOOTER */
+.fotoFooter {
+  display: block;
+}
+footer {
+  background-color: rgb(190, 190, 190);
+  max-width: 1200px;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+  font-size: 15px;
+  color: rgb(87, 87, 87);
+}
+footer > * {
+  width: 100%;
+  margin-top: 1.5%;
+  
+}
+footer li {
+  display: inline-block;
+  padding: 0% 2%;
+}
+
+footer article:nth-of-type(3) {
+  font-weight: 700;
+}
+
+footer article:nth-of-type(5) {
+  background-color: rgb(59, 59, 59);
+  width: 100%;
+  padding: 0;
+}
+
+.logoFooter {
+  margin: 0 auto;
+  padding: 2% 0 1%;
+}
+.logoFooter img {
+  width: 15%;
+  height: auto;
+
+}
+
+.redesSociales li {
+  padding: 0% 0.5%;
+}
+.direccionFooter {
+  color: rgb(156, 155, 155);
+}
+
+footer h4 {
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding: 1% 0;
+}
+
+/* ******************* SCROLL TO TOP */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  bottom: 60px;
+  right: 70px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color:  rgb(156, 155, 155);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 1PX 1PX 15PX rgba(97, 97, 96, 0.575);
+  font-size: 35px;
+  transition: .5s;
+  transform: translate(50%, 50%);
+}
+
+#myBtn:hover {
+  height: 65px;
+  width: 65px;
+  font-size: 40px;
+  transform: translate(50%, 50%);
+}
