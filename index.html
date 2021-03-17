@@ -9,14 +9,9 @@
     <title>Celler Vell</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Slab:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Slab:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df9e1b4a69.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -101,7 +96,7 @@
           />
           <h3>Cuvée Les Solanes <br />Brut Nature Reserva</h3>
           <p>
-            Daurat intens. Finísima bombolla, amb corona sencera i persistent.
+            <strong class="fichasBotellas">Daurat intens.</strong> Finísima bombolla, amb corona sencera i persistent.
             Sec, però saboròs en boca, vellutat. Lleugera i agradable percepció
             del seu pas per fusta.
           </p>
@@ -119,7 +114,7 @@
             Rosé Eco
           </h3>
           <p>
-            Rosat de clara palidesa d’aroma floral i gust molt afruitat. Amb una
+            <strong class="fichasBotellasDos">Rosat de clara palidesa</strong> d’aroma floral i gust molt afruitat. Amb una
             presentació molt acurada, hem volgut oferir uns caves per a les
             ocasions més especials.
           </p>
@@ -137,7 +132,7 @@
             Gran Reserva Eco 2016
           </h3>
           <p>
-            Or intens amb reflexos verdosos. Bombolla molt fina, amb corona
+            <strong class="fichasBotellasTres">Or intens </strong>amb reflexos verdosos. Bombolla molt fina, amb corona
             sencera i persistent. Donada la seva untuositat, lliga molt bé amb
             els formatges cremosos.
           </p>
@@ -175,36 +170,38 @@
 -->
 
       <section id="contPrimeraSeccion">
-        
         <article>
           <h3>Club Celler Vell</h3>
           <p>
             Apunta’t al Club Celler Vell per comprar els nostres caves amb
-            descomptes especials. El Club Celler Vell és un espai exclusiu on
-            podràs rebre ofertes i promocions úniques per comprar els nostres
-            caves amb descomptes. [+]
+            descomptes especials. El Club Celler Vell és
+            <strong class="verde primeraSeccion"
+              >un espai exclusiu on podràs rebre ofertes i promocions
+              úniques</strong
+            >
+            per comprar els nostres caves amb descomptes. [+]
           </p>
         </article>
+        <article></article>
         <article>
-          <img
-            src="img/Barriles.png"
-            alt="Barriles"
-            width="100%"
-            height="auto"
-          />
-        </article>
-        <article>
-          <h3>Tenda on-line</h3>
+          <h3 class="ofertas">Tenda on-line</h3>
           <p>
             Rendim tribut a les varietats típiques del cava tradicional al
             Penedès: Parellada, Xarel•lo i Macabeu. T’oferim la possibilitat de
-            comprar cava online. Selecciona el teu cava preferit i rebre’l
-            còmodament casa. [+]
+            comprar cava online.
+            <strong class="verde primeraSeccion">
+              Selecciona el teu cava preferit i rebre’l còmodament casa. </strong
+            >[+]
           </p>
         </article>
-        
+        <article class="trianguloDer">
+          <img src="img/triangulo.svg" alt="" />
+        </article>
+
+        <article class="trianguloIzq">
+          <img src="img/triangulo.svg" alt="" />
+        </article>
       </section>
- 
 
       <!--     ********************* SEPARADOR DOS
 -->
@@ -259,6 +256,12 @@
             Roma per als amants de l’art... [+]
           </p>
         </article>
+        <article class="trianguloRecetasDer">
+          <img src="img/trianguloRojo.svg" alt="" />
+        </article>
+        <article class="trianguloRecetasIzq">
+          <img src="img/trianguloRojo.svg" alt="" />
+        </article>
       </section>
 
       <!--     ********************* SEPARADOR TRES
@@ -287,6 +290,38 @@
           </h2>
         </article>
       </section>
+
+       <!--     ********************* cavaTren
+-->
+<section id="cavaTren">
+  <article>
+    <p>
+      <strong class="pCavaTren">Es una maqueta de trenes</strong> que
+      reproduce el entorno del Penedès, caracterizado por los viñedos de
+      los que nace el cava. Está ubicada en el interior de Celler Vell en
+      Sant Sadurní d’Anoia (Barcelona).
+    </p>
+
+    <p>
+      <strong class="pCavaTren"
+        >La maqueta ferroviaria se puede visitar los fines de
+        semana</strong>
+      haciendo un recorrido por las cavas donde descubriréis el proceso de
+      elaboración artesanal con una cata al final de la visita.
+    </p>
+  </article>
+
+  <article class="video-responsive">
+    <iframe width="487" height="274" frameborder="0" allow="autoplay; fullscreen" allowfullscreen src="https://www.youtube.com/embed/_Qtzqk3k4W0?autoplay=1&mute=1&loop=1&playlist=_Qtzqk3k4W0"></iframe>
+  </article>
+  <article class="triangulocavaTrenDer">
+    <img src="img/trianguloDorado.svg" alt="" />
+  </article>
+  <article class="triangulocavaTrenIzq">
+    <img src="img/trianguloDorado.svg" alt="" />
+  </article>
+</section>
+
       <!--     ********************* FOOTER
 -->
       <img
@@ -377,5 +412,40 @@
         </article>
       </footer>
     </main>
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+
+
+
+
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 720 || document.documentElement.scrollTop > 720) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+
   </body>
 </html>
