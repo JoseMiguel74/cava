@@ -18,8 +18,9 @@ ol {
   list-style-type: none; /*  none ninguna filigrana antes del texto */
 }
 
-a {
+a, a:visited {
   text-decoration: none;
+  color:inherit;
 }
 iframe{
   border: 0;
@@ -81,7 +82,7 @@ ENTRADA*/
   MENÚ
  */
 
-#menuPrincipal {
+ #menuPrincipal {
   max-width: 1200px;
   /* position: sticky;
   top: 0;
@@ -93,7 +94,7 @@ ENTRADA*/
   font-family: "Josefin Slab", serif;
   font-size: 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1% 5%;
   margin: 1.5% 0 2.5%;
   text-align: center;
@@ -102,8 +103,9 @@ ENTRADA*/
 }
 #menuPrincipal ul li:nth-of-type(4) {
   font-family: "Great Vibes", cursive;
-  font-size: 30px;
-  color: brown;
+  font-size: 35px;
+  color: rgb(141, 116, 73);
+  font-weight: 400;
 }
 
 #titularMenu {
@@ -114,9 +116,41 @@ ENTRADA*/
   font-size: 55px;
   padding: 0px 5% 5%;
   font-weight: 400;
-  color:rgb(54, 54, 54);
-
+  color: rgb(54, 54, 54);
 }
+#menuPrincipal ul li {
+  margin: 0 15px;
+  position: relative;
+  z-index: 50;
+}
+
+#menuPrincipal ul li a {
+  padding: 10px;
+  position: relative;
+
+}#menuPrincipal ul li a:hover {
+  padding: 10px;
+  position: relative;
+}
+
+#menuPrincipal ul li a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  border-bottom: 55px solid rgba(98, 81, 3, 0.212);
+  clip-path: circle(15px at 50% 50%);
+  z-index: -1;
+}
+
+#menuPrincipal ul li .nuestrosCavas:hover::after {
+  bottom: 5px;
+  left: 10px;
+  z-index: -1;
+  clip-path: circle(17px at 50% 50%);
+}
+
 
 /* ********************************* */
 /* PASA FOTOS
@@ -528,7 +562,8 @@ cavaTren */
   margin-right:90px;
 }
 iframe{
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.719);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.459);
+  border-radius: 10px;
 }
 
 
