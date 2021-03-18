@@ -18,11 +18,12 @@ ol {
   list-style-type: none; /*  none ninguna filigrana antes del texto */
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
-iframe{
+iframe {
   border: 0;
 }
 
@@ -82,7 +83,7 @@ ENTRADA*/
   MENÚ
  */
 
- #menuPrincipal {
+#menuPrincipal {
   max-width: 1200px;
   /* position: sticky;
   top: 0;
@@ -118,18 +119,16 @@ ENTRADA*/
   font-weight: 400;
   color: rgb(54, 54, 54);
 }
-#menuPrincipal ul li {
-  margin: 0 15px;
+#menuPrincipal li {
+  margin: 0 1.5%;
   position: relative;
   z-index: 50;
 }
 
-#menuPrincipal ul li a {
-  padding: 10px;
+#menuPrincipal a {
   position: relative;
-
-}#menuPrincipal ul li a:hover {
-  padding: 10px;
+}
+#menuPrincipal a:hover {
   position: relative;
 }
 
@@ -138,19 +137,18 @@ ENTRADA*/
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: -10px;
+  bottom: -15px;
   border-bottom: 55px solid rgba(98, 81, 3, 0.212);
   clip-path: circle(15px at 50% 50%);
   z-index: -1;
 }
 
 #menuPrincipal ul li .nuestrosCavas:hover::after {
-  bottom: 5px;
-  left: 10px;
+  bottom: -5px;
+  left: 15px;
   z-index: -1;
   clip-path: circle(17px at 50% 50%);
 }
-
 
 /* ********************************* */
 /* PASA FOTOS
@@ -223,27 +221,25 @@ ENTRADA*/
   color: rgb(141, 116, 73);
 }
 
-#contenedorPasafotos h3::after{
-  content:'';
-  position:absolute;
+#contenedorPasafotos h3::after {
+  content: "";
+  position: absolute;
   width: 60%;
-  left:50%;
+  left: 50%;
   bottom: -3px;
-  border-bottom: 1px solid rgb(98, 3, 41); 
+  border-bottom: 1px solid rgb(98, 3, 41);
   transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
 }
-.fichasBotellas{
+.fichasBotellas {
   color: rgb(71, 57, 30);
 }
-.fichasBotellasDos{
+.fichasBotellasDos {
   color: rgb(128, 58, 56);
 }
-.fichasBotellasTres{
+.fichasBotellasTres {
   color: rgb(141, 116, 73);
 }
-
-
 
 /* ***************************
 SEPARADOR UNO */
@@ -347,7 +343,6 @@ PRIMERA SECCIÓN */
   transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
   text-align: right;
-
 }
 
 #contPrimeraSeccion article:nth-child(4),
@@ -361,7 +356,6 @@ PRIMERA SECCIÓN */
   top: 50%;
   transform: rotate(180deg) translate(0%, 50%);
 
- 
   text-align: right;
 }
 
@@ -424,14 +418,13 @@ RECETAS */
   position: relative;
 }
 
-
-#contRecetas h3::after{
-  content:'';
-  position:absolute;
+#contRecetas h3::after {
+  content: "";
+  position: absolute;
   width: 100%;
-  left:0;
-  bottom: 10px;                    /* <- distance */
-  border-bottom: 1px solid rgb(98, 3, 41); 
+  left: 0;
+  bottom: 10px; /* <- distance */
+  border-bottom: 1px solid rgb(98, 3, 41);
 }
 
 #contRecetas p {
@@ -461,8 +454,8 @@ RECETAS */
 #contRecetas article:nth-of-type(4) {
   width: 35px;
 }
-#contRecetas article:nth-of-type(2){
-margin-left:35px;
+#contRecetas article:nth-of-type(2) {
+  margin-left: 35px;
 }
 
 /* ***************************
@@ -491,6 +484,7 @@ SEPARADOR TRES */
   font-size: 50px;
   color: rgb(141, 116, 73);
   margin: 4% 0% 3%;
+  padding: 0 5%;
 }
 
 /* ***************************
@@ -498,24 +492,8 @@ cavaTren */
 
 #cavaTren {
   display: flex;
-  max-width: 1200px;
-  margin: 0% 0 7%;
-  padding: 15px 0px;
-  position: relative;
-}
-
-
-#cavaTren h4 {
-  font-size: 18px;
-  font-family: "Josefin Slab", sans-serif;
-  color: black;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-#cavaTren h3 {
-  font-size: 40px;
-  font-family: "Great Vibes";
-  color: rgb(98, 3, 41);
+  justify-content: space-between;
+  padding: 3% 0;
   position: relative;
 }
 
@@ -554,16 +532,30 @@ cavaTren */
   width: 35px;
 }
 #cavaTren article:nth-of-type(1) {
-  margin-left: 90px;
-  margin-right: 30px;
-  padding-left: 20px;
+  margin-left: 7%;
+  margin-right: 5%;
+  height: 350px;
+  min-width: 300px;
+  overflow: hidden;
 }
 #cavaTren article:nth-of-type(2) {
-  margin-right:90px;
+  margin-right: 9%;
+  text-align: right;  
 }
-iframe{
+iframe {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.459);
-  border-radius: 10px;
+  
+}
+
+/* ***************************
+DIAMANTE */
+#diamante{
+  width: 30%;
+  margin: 3% auto 8%;
+  text-align: center;
+}
+#diamante img{
+  width: 100%;
 }
 
 
@@ -583,7 +575,6 @@ footer {
 footer > * {
   width: 100%;
   margin-top: 1.5%;
-  
 }
 footer li {
   display: inline-block;
@@ -598,6 +589,9 @@ footer article:nth-of-type(5) {
   background-color: rgb(59, 59, 59);
   width: 100%;
   padding: 0;
+  color: rgb(156, 155, 155);
+  padding: 0 3%;
+  line-height: 20px;
 }
 
 .logoFooter {
@@ -607,15 +601,12 @@ footer article:nth-of-type(5) {
 .logoFooter img {
   width: 15%;
   height: auto;
-
 }
 
 .redesSociales li {
   padding: 0% 0.5%;
 }
-.direccionFooter {
-  color: rgb(156, 155, 155);
-}
+
 
 footer h4 {
   font-size: 15px;
@@ -635,12 +626,12 @@ footer h4 {
   z-index: 99;
   border: none;
   outline: none;
-  color:  rgb(156, 155, 155);
+  color: rgb(156, 155, 155);
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: 1PX 1PX 15PX rgba(97, 97, 96, 0.575);
+  box-shadow: 1px 1px 15px rgba(97, 97, 96, 0.575);
   font-size: 35px;
-  transition: .5s;
+  transition: 0.5s;
   transform: translate(50%, 50%);
 }
 
